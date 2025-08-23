@@ -7,7 +7,823 @@
 		},
 		"entries": [
 			{
-				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
+				"time": 143.71900000000002,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8000/api/v1/barbers/custom/active",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 05:21:10 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 667,
+						"mimeType": "application/json",
+						"text": "{\"success\":true,\"data\":[{\"id\":1,\"user_id\":3,\"barbershop_id\":1,\"name\":\"Jo\\u00e3o Silva 2\",\"email\":\"joao@barbearia.com\",\"phone\":\"(11) 99999-9999\",\"photo_base64\":null,\"photo_type\":null,\"specialties\":\"Corte social, barba, degrad\\u00ea\",\"description\":\"Barbeiro especializado em cortes modernos\",\"experience_years\":5,\"rating\":\"4.80\",\"active\":true,\"start_time\":\"09:00\",\"end_time\":\"18:00\",\"working_days\":\"[1, 2, 3, 4, 5, 6]\",\"created_at\":\"2025-08-23T05:16:41.000000Z\",\"updated_at\":\"2025-08-23T05:21:05.000000Z\",\"deleted_at\":null,\"user\":{\"id\":3,\"name\":\"Joao Henrique de Oliveira\",\"email\":\"jhenrique2602@gmail.com\"},\"barbershop\":{\"id\":1,\"name\":\"Barbearia Premium\"}}],\"count\":1}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 143.71900000000002,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/barbers/custom/active"
+			},
+			{
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
+				"time": 117.503,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8000/api/v1/barbers/custom/inactive",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 05:21:07 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 36,
+						"mimeType": "application/json",
+						"text": "{\"success\":true,\"data\":[],\"count\":0}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 117.503,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/barbers/custom/inactive"
+			},
+			{
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
+				"time": 121.533,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8000/api/v1/barbers/custom/trashed",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 05:19:28 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 692,
+						"mimeType": "application/json",
+						"text": "{\"success\":true,\"data\":[{\"id\":1,\"user_id\":3,\"barbershop_id\":1,\"name\":\"Jo\\u00e3o Silva 2\",\"email\":\"joao@barbearia.com\",\"phone\":\"(11) 99999-9999\",\"photo_base64\":null,\"photo_type\":null,\"specialties\":\"Corte social, barba, degrad\\u00ea\",\"description\":\"Barbeiro especializado em cortes modernos\",\"experience_years\":5,\"rating\":\"4.80\",\"active\":true,\"start_time\":\"09:00\",\"end_time\":\"18:00\",\"working_days\":\"[1, 2, 3, 4, 5, 6]\",\"created_at\":\"2025-08-23T05:16:41.000000Z\",\"updated_at\":\"2025-08-23T05:17:48.000000Z\",\"deleted_at\":\"2025-08-23T05:17:48.000000Z\",\"user\":{\"id\":3,\"name\":\"Joao Henrique de Oliveira\",\"email\":\"jhenrique2602@gmail.com\"},\"barbershop\":{\"id\":1,\"name\":\"Barbearia Premium\"}}],\"count\":1}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 121.533,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/barbers/custom/trashed"
+			},
+			{
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
+				"time": 134.953,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8000/api/v1/barbers/custom/1/restore",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 05:20:15 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 699,
+						"mimeType": "application/json",
+						"text": "{\"success\":true,\"message\":\"Barbeiro restaurado com sucesso\",\"data\":{\"id\":1,\"user_id\":3,\"barbershop_id\":1,\"name\":\"Jo\\u00e3o Silva 2\",\"email\":\"joao@barbearia.com\",\"phone\":\"(11) 99999-9999\",\"photo_base64\":null,\"photo_type\":null,\"specialties\":\"Corte social, barba, degrad\\u00ea\",\"description\":\"Barbeiro especializado em cortes modernos\",\"experience_years\":5,\"rating\":\"4.80\",\"active\":true,\"start_time\":\"09:00\",\"end_time\":\"18:00\",\"working_days\":\"[1, 2, 3, 4, 5, 6]\",\"created_at\":\"2025-08-23T05:16:41.000000Z\",\"updated_at\":\"2025-08-23T05:20:15.000000Z\",\"deleted_at\":null,\"user\":{\"id\":3,\"name\":\"Joao Henrique de Oliveira\",\"email\":\"jhenrique2602@gmail.com\"},\"barbershop\":{\"id\":1,\"name\":\"Barbearia Premium\"}}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 134.953,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/barbers/custom/{id}/restore"
+			},
+			{
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
+				"time": 130.626,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8000/api/v1/barbers/custom/1/toggle-status",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 05:21:05 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 98,
+						"mimeType": "application/json",
+						"text": "{\"success\":true,\"message\":\"Status do barbeiro alterado com sucesso\",\"data\":{\"id\":1,\"active\":true}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 130.626,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/barbers/custom/{id}/toggle-status"
+			},
+			{
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
+				"time": 179.27499999999998,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8000/api/v1/barbers/custom/barbershop/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 05:22:15 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 667,
+						"mimeType": "application/json",
+						"text": "{\"success\":true,\"data\":[{\"id\":1,\"user_id\":3,\"barbershop_id\":1,\"name\":\"Jo\\u00e3o Silva 2\",\"email\":\"joao@barbearia.com\",\"phone\":\"(11) 99999-9999\",\"photo_base64\":null,\"photo_type\":null,\"specialties\":\"Corte social, barba, degrad\\u00ea\",\"description\":\"Barbeiro especializado em cortes modernos\",\"experience_years\":5,\"rating\":\"4.80\",\"active\":true,\"start_time\":\"09:00\",\"end_time\":\"18:00\",\"working_days\":\"[1, 2, 3, 4, 5, 6]\",\"created_at\":\"2025-08-23T05:16:41.000000Z\",\"updated_at\":\"2025-08-23T05:21:05.000000Z\",\"deleted_at\":null,\"user\":{\"id\":3,\"name\":\"Joao Henrique de Oliveira\",\"email\":\"jhenrique2602@gmail.com\"},\"barbershop\":{\"id\":1,\"name\":\"Barbearia Premium\"}}],\"count\":1}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 179.27499999999998,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/barbers/custom/barbershop/{id}"
+			},
+			{
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
+				"time": 118.932,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8000/api/v1/barbers",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 05:20:20 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 667,
+						"mimeType": "application/json",
+						"text": "{\"success\":true,\"data\":[{\"id\":1,\"user_id\":3,\"barbershop_id\":1,\"name\":\"Jo\\u00e3o Silva 2\",\"email\":\"joao@barbearia.com\",\"phone\":\"(11) 99999-9999\",\"photo_base64\":null,\"photo_type\":null,\"specialties\":\"Corte social, barba, degrad\\u00ea\",\"description\":\"Barbeiro especializado em cortes modernos\",\"experience_years\":5,\"rating\":\"4.80\",\"active\":true,\"start_time\":\"09:00\",\"end_time\":\"18:00\",\"working_days\":\"[1, 2, 3, 4, 5, 6]\",\"created_at\":\"2025-08-23T05:16:41.000000Z\",\"updated_at\":\"2025-08-23T05:20:15.000000Z\",\"deleted_at\":null,\"user\":{\"id\":3,\"name\":\"Joao Henrique de Oliveira\",\"email\":\"jhenrique2602@gmail.com\"},\"barbershop\":{\"id\":1,\"name\":\"Barbearia Premium\"}}],\"count\":1}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 118.932,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/barbers"
+			},
+			{
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
+				"time": 170.107,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8000/api/v1/barbers",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n    \"user_id\": 3,\n    \"barbershop_id\": 1,\n    \"name\": \"João Silva\",\n    \"email\": \"joao@barbearia.com\",\n    \"phone\": \"(11) 99999-9999\",\n    \"specialties\": \"Corte social, barba, degradê\",\n    \"description\": \"Barbeiro especializado em cortes modernos\",\n    \"experience_years\": 5,\n    \"rating\": 4.8,\n    \"active\": true,\n    \"start_time\": \"09:00\",\n    \"end_time\": \"18:00\",\n    \"working_days\": \"[1, 2, 3, 4, 5, 6]\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 05:16:41 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 641,
+						"mimeType": "application/json",
+						"text": "{\"success\":true,\"message\":\"Barbeiro cadastrado com sucesso\",\"data\":{\"user_id\":3,\"barbershop_id\":1,\"name\":\"Jo\\u00e3o Silva\",\"email\":\"joao@barbearia.com\",\"phone\":\"(11) 99999-9999\",\"specialties\":\"Corte social, barba, degrad\\u00ea\",\"description\":\"Barbeiro especializado em cortes modernos\",\"experience_years\":5,\"rating\":\"4.80\",\"active\":true,\"start_time\":\"09:00\",\"end_time\":\"18:00\",\"working_days\":\"[1, 2, 3, 4, 5, 6]\",\"updated_at\":\"2025-08-23T05:16:41.000000Z\",\"created_at\":\"2025-08-23T05:16:41.000000Z\",\"id\":1,\"user\":{\"id\":3,\"name\":\"Joao Henrique de Oliveira\",\"email\":\"jhenrique2602@gmail.com\"},\"barbershop\":{\"id\":1,\"name\":\"Barbearia Premium\"}}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 170.107,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/barbers"
+			},
+			{
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
+				"time": 139.163,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:8000/api/v1/barbers/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n    \"user_id\": 3,\n    \"barbershop_id\": 1,\n    \"name\": \"João Silva 2\",\n    \"email\": \"joao@barbearia.com\",\n    \"phone\": \"(11) 99999-9999\",\n    \"specialties\": \"Corte social, barba, degradê\",\n    \"description\": \"Barbeiro especializado em cortes modernos\",\n    \"experience_years\": 5,\n    \"rating\": 4.8,\n    \"active\": true,\n    \"start_time\": \"09:00\",\n    \"end_time\": \"18:00\",\n    \"working_days\": \"[1, 2, 3, 4, 5, 6]\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 05:17:05 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 699,
+						"mimeType": "application/json",
+						"text": "{\"success\":true,\"message\":\"Barbeiro atualizado com sucesso\",\"data\":{\"id\":1,\"user_id\":3,\"barbershop_id\":1,\"name\":\"Jo\\u00e3o Silva 2\",\"email\":\"joao@barbearia.com\",\"phone\":\"(11) 99999-9999\",\"photo_base64\":null,\"photo_type\":null,\"specialties\":\"Corte social, barba, degrad\\u00ea\",\"description\":\"Barbeiro especializado em cortes modernos\",\"experience_years\":5,\"rating\":\"4.80\",\"active\":true,\"start_time\":\"09:00\",\"end_time\":\"18:00\",\"working_days\":\"[1, 2, 3, 4, 5, 6]\",\"created_at\":\"2025-08-23T05:16:41.000000Z\",\"updated_at\":\"2025-08-23T05:17:05.000000Z\",\"deleted_at\":null,\"user\":{\"id\":3,\"name\":\"Joao Henrique de Oliveira\",\"email\":\"jhenrique2602@gmail.com\"},\"barbershop\":{\"id\":1,\"name\":\"Barbearia Premium\"}}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 139.163,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/barbers/{id}"
+			},
+			{
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
+				"time": 124.56,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:8000/api/v1/barbers/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 404,
+					"statusText": "Not Found",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 05:17:51 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 58,
+						"mimeType": "application/json",
+						"text": "{\"success\":false,\"message\":\"Barbeiro n\\u00e3o encontrado\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 124.56,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/barbers/{id}"
+			},
+			{
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
 				"time": 117.767,
 				"request": {
 					"method": "GET",
@@ -89,7 +905,7 @@
 				"comment": "/api/v1/barbershops/custom/trashed"
 			},
 			{
-				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
 				"time": 118.226,
 				"request": {
 					"method": "GET",
@@ -171,7 +987,7 @@
 				"comment": "/api/v1/barbershops/custom/inactive"
 			},
 			{
-				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
 				"time": 118.908,
 				"request": {
 					"method": "GET",
@@ -253,7 +1069,7 @@
 				"comment": "/api/v1/barbershops/custom/active"
 			},
 			{
-				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
 				"time": 144.598,
 				"request": {
 					"method": "POST",
@@ -335,7 +1151,7 @@
 				"comment": "/api/v1/barbershops/custom/{id}/restore"
 			},
 			{
-				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
 				"time": 119.298,
 				"request": {
 					"method": "POST",
@@ -417,7 +1233,7 @@
 				"comment": "/api/v1/barbershops/custom/{id}/toggle-status"
 			},
 			{
-				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
 				"time": 123.085,
 				"request": {
 					"method": "GET",
@@ -499,7 +1315,7 @@
 				"comment": "/api/v1/barbershops"
 			},
 			{
-				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
 				"time": 155.54100000000003,
 				"request": {
 					"method": "POST",
@@ -581,7 +1397,7 @@
 				"comment": "/api/v1/barbershops"
 			},
 			{
-				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
 				"time": 151.861,
 				"request": {
 					"method": "PUT",
@@ -663,7 +1479,7 @@
 				"comment": "/api/v1/barbershops/{id}"
 			},
 			{
-				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
 				"time": 121.72,
 				"request": {
 					"method": "DELETE",
@@ -741,7 +1557,7 @@
 				"comment": "/api/v1/barbershops/{id}"
 			},
 			{
-				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
 				"time": 133.495,
 				"request": {
 					"method": "POST",
@@ -823,7 +1639,7 @@
 				"comment": "/api/v1/register"
 			},
 			{
-				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
 				"time": 324.67,
 				"request": {
 					"method": "POST",
@@ -905,7 +1721,7 @@
 				"comment": "/api/v1/login"
 			},
 			{
-				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
 				"time": 116.789,
 				"request": {
 					"method": "POST",
@@ -987,7 +1803,7 @@
 				"comment": "/api/v1/logout"
 			},
 			{
-				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
 				"time": 115.67099999999999,
 				"request": {
 					"method": "GET",
@@ -1065,7 +1881,7 @@
 				"comment": "/api/v1/health"
 			},
 			{
-				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"startedDateTime": "2025-08-23T05:22:54.623Z",
 				"time": 380.441,
 				"request": {
 					"method": "GET",
