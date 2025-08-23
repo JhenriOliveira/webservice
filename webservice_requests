@@ -1,0 +1,1151 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v11.4.0"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"time": 117.767,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8000/api/v1/barbershops/custom/trashed",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 04:56:28 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 36,
+						"mimeType": "application/json",
+						"text": "{\"success\":true,\"data\":[],\"count\":0}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 117.767,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/barbershops/custom/trashed"
+			},
+			{
+				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"time": 118.226,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8000/api/v1/barbershops/custom/inactive",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 04:56:26 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 36,
+						"mimeType": "application/json",
+						"text": "{\"success\":true,\"data\":[],\"count\":0}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 118.226,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/barbershops/custom/inactive"
+			},
+			{
+				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"time": 118.908,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8000/api/v1/barbershops/custom/active",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 04:56:23 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 1227,
+						"mimeType": "application/json",
+						"text": "{\"success\":true,\"data\":[{\"id\":1,\"user_id\":3,\"name\":\"Barbearia Premium\",\"corporate_name\":\"Barbearia Premium LTDA\",\"tax_id\":\"12.345.678\\/0001-90\",\"phone\":\"(11) 99999-9999\",\"email\":\"contato@barbeariapremium.com.br\",\"description\":\"Barbearia tradicional com cortes modernos e ambiente climatizado\",\"address\":\"Avenida Paulista\",\"address_number\":\"1000\",\"address_complement\":\"Sala 101\",\"neighborhood\":\"Bela Vista\",\"city\":\"S\\u00e3o Paulo\",\"state\":\"SP\",\"zip_code\":\"01310-100\",\"latitude\":\"-23.56320000\",\"longitude\":\"-46.65439000\",\"opening_time\":\"08:00\",\"closing_time\":\"20:00\",\"average_service_time\":45,\"accepts_online_scheduling\":true,\"active\":true,\"profile_photo_base64\":\"iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=\",\"profile_photo_type\":\"png\",\"social_media\":\"{\\\"instagram\\\": \\\"https:\\/\\/instagram.com\\/barbeariapremium\\\", \\\"facebook\\\": \\\"https:\\/\\/facebook.com\\/barbeariapremium\\\", \\\"whatsapp\\\": \\\"https:\\/\\/wa.me\\/5511999999999\\\"}\",\"working_days\":\"[1,2,3,4,5,6]\",\"remember_token\":null,\"created_at\":\"2025-08-23T04:11:07.000000Z\",\"updated_at\":\"2025-08-23T04:56:21.000000Z\",\"deleted_at\":null,\"user\":{\"id\":3,\"name\":\"Joao Henrique de Oliveira\",\"email\":\"jhenrique2602@gmail.com\"}}],\"count\":1}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 118.908,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/barbershops/custom/active"
+			},
+			{
+				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"time": 144.598,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8000/api/v1/barbershops/custom/1/restore",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 04:55:28 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 1260,
+						"mimeType": "application/json",
+						"text": "{\"success\":true,\"message\":\"Barbearia restaurada com sucesso\",\"data\":{\"id\":1,\"user_id\":3,\"name\":\"Barbearia Premium\",\"corporate_name\":\"Barbearia Premium LTDA\",\"tax_id\":\"12.345.678\\/0001-90\",\"phone\":\"(11) 99999-9999\",\"email\":\"contato@barbeariapremium.com.br\",\"description\":\"Barbearia tradicional com cortes modernos e ambiente climatizado\",\"address\":\"Avenida Paulista\",\"address_number\":\"1000\",\"address_complement\":\"Sala 101\",\"neighborhood\":\"Bela Vista\",\"city\":\"S\\u00e3o Paulo\",\"state\":\"SP\",\"zip_code\":\"01310-100\",\"latitude\":\"-23.56320000\",\"longitude\":\"-46.65439000\",\"opening_time\":\"08:00\",\"closing_time\":\"20:00\",\"average_service_time\":45,\"accepts_online_scheduling\":true,\"active\":true,\"profile_photo_base64\":\"iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=\",\"profile_photo_type\":\"png\",\"social_media\":\"{\\\"instagram\\\": \\\"https:\\/\\/instagram.com\\/barbeariapremium\\\", \\\"facebook\\\": \\\"https:\\/\\/facebook.com\\/barbeariapremium\\\", \\\"whatsapp\\\": \\\"https:\\/\\/wa.me\\/5511999999999\\\"}\",\"working_days\":\"[1,2,3,4,5,6]\",\"remember_token\":null,\"created_at\":\"2025-08-23T04:11:07.000000Z\",\"updated_at\":\"2025-08-23T04:55:28.000000Z\",\"deleted_at\":null,\"user\":{\"id\":3,\"name\":\"Joao Henrique de Oliveira\",\"email\":\"jhenrique2602@gmail.com\"}}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 144.598,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/barbershops/custom/{id}/restore"
+			},
+			{
+				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"time": 119.298,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8000/api/v1/barbershops/custom/1/toggle-status",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 04:56:21 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 99,
+						"mimeType": "application/json",
+						"text": "{\"success\":true,\"message\":\"Status da barbearia alterado com sucesso\",\"data\":{\"id\":1,\"active\":true}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 119.298,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/barbershops/custom/{id}/toggle-status"
+			},
+			{
+				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"time": 123.085,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8000/api/v1/barbershops",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 04:55:11 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 1227,
+						"mimeType": "application/json",
+						"text": "{\"success\":true,\"data\":[{\"id\":1,\"user_id\":3,\"name\":\"Barbearia Premium\",\"corporate_name\":\"Barbearia Premium LTDA\",\"tax_id\":\"12.345.678\\/0001-90\",\"phone\":\"(11) 99999-9999\",\"email\":\"contato@barbeariapremium.com.br\",\"description\":\"Barbearia tradicional com cortes modernos e ambiente climatizado\",\"address\":\"Avenida Paulista\",\"address_number\":\"1000\",\"address_complement\":\"Sala 101\",\"neighborhood\":\"Bela Vista\",\"city\":\"S\\u00e3o Paulo\",\"state\":\"SP\",\"zip_code\":\"01310-100\",\"latitude\":\"-23.56320000\",\"longitude\":\"-46.65439000\",\"opening_time\":\"08:00\",\"closing_time\":\"20:00\",\"average_service_time\":45,\"accepts_online_scheduling\":true,\"active\":true,\"profile_photo_base64\":\"iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=\",\"profile_photo_type\":\"png\",\"social_media\":\"{\\\"instagram\\\": \\\"https:\\/\\/instagram.com\\/barbeariapremium\\\", \\\"facebook\\\": \\\"https:\\/\\/facebook.com\\/barbeariapremium\\\", \\\"whatsapp\\\": \\\"https:\\/\\/wa.me\\/5511999999999\\\"}\",\"working_days\":\"[1,2,3,4,5,6]\",\"remember_token\":null,\"created_at\":\"2025-08-23T04:11:07.000000Z\",\"updated_at\":\"2025-08-23T04:38:25.000000Z\",\"deleted_at\":null,\"user\":{\"id\":3,\"name\":\"Joao Henrique de Oliveira\",\"email\":\"jhenrique2602@gmail.com\"}}],\"count\":1}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 123.085,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/barbershops"
+			},
+			{
+				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"time": 155.54100000000003,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8000/api/v1/barbershops",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n    \"user_id\": 3,\n    \"name\": \"Barbearia Premium\",\n    \"corporate_name\": \"Barbearia Premium LTDA\",\n    \"tax_id\": \"12.345.678/0001-90\",\n    \"phone\": \"(11) 99999-9999\",\n    \"email\": \"contato@barbeariapremium.com.br\",\n    \"description\": \"Barbearia tradicional com cortes modernos e ambiente climatizado\",\n    \"address\": \"Avenida Paulista\",\n    \"address_number\": \"1000\",\n    \"address_complement\": \"Sala 101\",\n    \"neighborhood\": \"Bela Vista\",\n    \"city\": \"São Paulo\",\n    \"state\": \"SP\",\n    \"zip_code\": \"01310-100\",\n    \"latitude\": -23.5632000,\n    \"longitude\": -46.6543900,\n    \"opening_time\": \"08:00\",\n    \"closing_time\": \"20:00\",\n    \"average_service_time\": 45,\n    \"accepts_online_scheduling\": true,\n    \"active\": true,\n    \"profile_photo_base64\": \"iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=\",\n    \"profile_photo_type\": \"png\",\n    \"social_media\": \"{\\\"instagram\\\": \\\"https://instagram.com/barbeariapremium\\\", \\\"facebook\\\": \\\"https://facebook.com/barbeariapremium\\\", \\\"whatsapp\\\": \\\"https://wa.me/5511999999999\\\"}\",\n    \"working_days\": \"[1,2,3,4,5,6]\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 422,
+					"statusText": "Unprocessable Content",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 04:38:10 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 133,
+						"mimeType": "application/json",
+						"text": "{\"success\":false,\"message\":\"Dados de entrada inv\\u00e1lidos\",\"errors\":{\"tax_id\":[\"validation.unique\"],\"email\":[\"validation.unique\"]}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 155.54100000000003,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/barbershops"
+			},
+			{
+				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"time": 151.861,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:8000/api/v1/barbershops/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n    \"user_id\": 3,\n    \"name\": \"Barbearia Premium\",\n    \"corporate_name\": \"Barbearia Premium LTDA\",\n    \"tax_id\": \"12.345.678/0001-90\",\n    \"phone\": \"(11) 99999-9999\",\n    \"email\": \"contato@barbeariapremium.com.br\",\n    \"description\": \"Barbearia tradicional com cortes modernos e ambiente climatizado\",\n    \"address\": \"Avenida Paulista\",\n    \"address_number\": \"1000\",\n    \"address_complement\": \"Sala 101\",\n    \"neighborhood\": \"Bela Vista\",\n    \"city\": \"São Paulo\",\n    \"state\": \"SP\",\n    \"zip_code\": \"01310-100\",\n    \"latitude\": -23.5632000,\n    \"longitude\": -46.6543900,\n    \"opening_time\": \"08:00\",\n    \"closing_time\": \"20:00\",\n    \"average_service_time\": 45,\n    \"accepts_online_scheduling\": true,\n    \"active\": true,\n    \"profile_photo_base64\": \"iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=\",\n    \"profile_photo_type\": \"png\",\n    \"social_media\": \"{\\\"instagram\\\": \\\"https://instagram.com/barbeariapremium\\\", \\\"facebook\\\": \\\"https://facebook.com/barbeariapremium\\\", \\\"whatsapp\\\": \\\"https://wa.me/5511999999999\\\"}\",\n    \"working_days\": \"[1,2,3,4,5,6]\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 04:38:25 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 1260,
+						"mimeType": "application/json",
+						"text": "{\"success\":true,\"message\":\"Barbearia atualizada com sucesso\",\"data\":{\"id\":1,\"user_id\":3,\"name\":\"Barbearia Premium\",\"corporate_name\":\"Barbearia Premium LTDA\",\"tax_id\":\"12.345.678\\/0001-90\",\"phone\":\"(11) 99999-9999\",\"email\":\"contato@barbeariapremium.com.br\",\"description\":\"Barbearia tradicional com cortes modernos e ambiente climatizado\",\"address\":\"Avenida Paulista\",\"address_number\":\"1000\",\"address_complement\":\"Sala 101\",\"neighborhood\":\"Bela Vista\",\"city\":\"S\\u00e3o Paulo\",\"state\":\"SP\",\"zip_code\":\"01310-100\",\"latitude\":\"-23.56320000\",\"longitude\":\"-46.65439000\",\"opening_time\":\"08:00\",\"closing_time\":\"20:00\",\"average_service_time\":45,\"accepts_online_scheduling\":true,\"active\":true,\"profile_photo_base64\":\"iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=\",\"profile_photo_type\":\"png\",\"social_media\":\"{\\\"instagram\\\": \\\"https:\\/\\/instagram.com\\/barbeariapremium\\\", \\\"facebook\\\": \\\"https:\\/\\/facebook.com\\/barbeariapremium\\\", \\\"whatsapp\\\": \\\"https:\\/\\/wa.me\\/5511999999999\\\"}\",\"working_days\":\"[1,2,3,4,5,6]\",\"remember_token\":null,\"created_at\":\"2025-08-23T04:11:07.000000Z\",\"updated_at\":\"2025-08-23T04:38:25.000000Z\",\"deleted_at\":null,\"user\":{\"id\":3,\"name\":\"Joao Henrique de Oliveira\",\"email\":\"jhenrique2602@gmail.com\"}}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 151.861,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/barbershops/{id}"
+			},
+			{
+				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"time": 121.72,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:8000/api/v1/barbershops/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 04:55:16 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 64,
+						"mimeType": "application/json",
+						"text": "{\"success\":true,\"message\":\"Barbearia exclu\\u00edda com sucesso\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 121.72,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/barbershops/{id}"
+			},
+			{
+				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"time": 133.495,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8000/api/v1/register",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.4.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"name\" : \"Joao Henrique de Oliveira\",\n\t\"email\" : \"jhenrique2602@gmail.com\",\n\t\"password\": \"J040h3nr1qu3@\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 422,
+					"statusText": "Unprocessable Content",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 04:08:16 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 78,
+						"mimeType": "application/json",
+						"text": "{\"message\":\"Invalid validation data\",\"errors\":{\"email\":[\"validation.unique\"]}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 133.495,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/register"
+			},
+			{
+				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"time": 324.67,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8000/api/v1/login",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.4.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"email\" : \"jhenrique2602@gmail.com\",\n\t\"password\": \"J040h3nr1qu3@\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 23 Aug 2025 04:08:23 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 148,
+						"mimeType": "application/json",
+						"text": "{\"token\":\"11|aEunUWWYrWRzxhhjYgbk2lLEv9Nwich9jfLHh79o87044b47\",\"user\":{\"id\":3,\"name\":\"Joao Henrique de Oliveira\",\"email\":\"jhenrique2602@gmail.com\"}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 324.67,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/login"
+			},
+			{
+				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"time": 116.789,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8000/api/v1/logout",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 9|RWK4G6QV4ZHIMGDL31iWdAZk7Ac0W22OBk837AAge51f5f63"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 14 Aug 2025 22:25:25 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 31,
+						"mimeType": "application/json",
+						"text": "{\"message\":\"Logout successful\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 116.789,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/logout"
+			},
+			{
+				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"time": 115.67099999999999,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8000/api/v1/health",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.4.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 14 Aug 2025 22:19:02 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 98,
+						"mimeType": "application/json",
+						"text": "{\"status\":\"healthy\",\"version\":\"1.0\",\"timestamp\":\"2025-08-14 22:19:02\",\"environment\":\"Development\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 115.67099999999999,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/health"
+			},
+			{
+				"startedDateTime": "2025-08-23T04:59:54.240Z",
+				"time": 380.441,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8000/api/v1/user",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer 1|95gddOnSiGJjfKyEU01eECW90AZKwNGvCHnQaqLca90dc3ae"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.4.8"
+						},
+						{
+							"name": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"name": "Date",
+							"value": "Mon, 18 Aug 2025 00:05:40 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"content": {
+						"size": 86,
+						"mimeType": "application/json",
+						"text": "{\"user\":{\"id\":1,\"name\":\"Joao Henrique de Oliveira\",\"email\":\"jhenrique2602@gmail.com\"}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 380.441,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/api/v1/user "
+			}
+		]
+	}
+}

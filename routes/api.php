@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BarbershopController;
 
 Route::prefix('v1')->group(function () {
     Route::get('/health', function () {
@@ -20,5 +21,15 @@ Route::prefix('v1')->group(function () {
     Route::middleware('auth:sanctum')->group(function () {
         Route::post('/logout', [AuthController::class, 'logout']);
         Route::get('/user', [AuthController::class, 'user']);
+    
+        Route::apiResource('barbershops', BarbershopController::class);
+
+        Route::prefix('barbershops/custom')->group(function () {
+            Route::get('/active', [BarbershopController::class, 'active']);
+            Route::get('/inactive', [BarbershopController::class, 'inactive']);
+            Route::get('/trashed', [BarbershopController::class, 'trashed']);
+            Route::post('/{id}/restore', [BarbershopController::class, 'restore']);
+            Route::post('/{id}/toggle-status', [BarbershopController::class, 'toggleStatus']);
+        });
     });
 });
