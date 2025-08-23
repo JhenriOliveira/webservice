@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BarbershopController;
 use App\Http\Controllers\BarberController;
+use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\ServiceController;
 
 Route::prefix('v1')->group(function () {
     Route::get('/health', function () {
@@ -42,6 +44,17 @@ Route::prefix('v1')->group(function () {
             Route::get('/barbershop/{barbershopId}', [BarberController::class, 'byBarbershop']);
             Route::post('/{id}/restore', [BarberController::class, 'restore']);
             Route::post('/{id}/toggle-status', [BarberController::class, 'toggleStatus']);
+        });
+
+        Route::apiResource('services', ServiceController::class);
+
+        Route::prefix('services/custom')->group(function () {
+            Route::get('/active', [ServiceController::class, 'active']);
+            Route::get('/inactive', [ServiceController::class, 'inactive']);
+            Route::get('/trashed', [ServiceController::class, 'trashed']);
+            Route::get('/by-barber', [ServiceController::class, 'byBarber']);
+            Route::post('/{id}/restore', [ServiceController::class, 'restore']);
+            Route::post('/{id}/toggle-status', [ServiceController::class, 'toggleStatus']);
         });
     });
 });
