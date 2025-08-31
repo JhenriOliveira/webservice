@@ -68,7 +68,6 @@ class Barbershop extends Model
     public function setProfilePhotoBase64Attribute($value)
     {
         if ($value) {
-            // Remove o prefixo data:image/xxx;base64, se existir
             if (preg_match('/^data:image\/(\w+);base64,/', $value, $type)) {
                 $value = substr($value, strpos($value, ',') + 1);
                 $this->attributes['profile_photo_type'] = $type[1];

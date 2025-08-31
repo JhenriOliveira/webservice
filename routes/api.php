@@ -7,6 +7,8 @@ use App\Http\Controllers\BarbershopController;
 use App\Http\Controllers\BarberController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\ProductController;
 
 Route::prefix('v1')->group(function () {
     Route::get('/health', function () {
@@ -46,6 +48,14 @@ Route::prefix('v1')->group(function () {
             Route::post('/{id}/toggle-status', [BarberController::class, 'toggleStatus']);
         });
 
+        Route::apiResource('clients', ClientController::class);
+
+        Route::prefix('clients/custom')->group(function () {
+            Route::post('/{client}/loyalty-points', [ClientController::class, 'updateLoyaltyPoints']);
+            Route::get('/user/{userId}', [ClientController::class, 'getByUserId']);
+            Route::get('/nearby/search', [ClientController::class, 'nearbyClients']);
+        });
+
         Route::apiResource('services', ServiceController::class);
 
         Route::prefix('services/custom')->group(function () {
@@ -55,6 +65,38 @@ Route::prefix('v1')->group(function () {
             Route::get('/by-barber', [ServiceController::class, 'byBarber']);
             Route::post('/{id}/restore', [ServiceController::class, 'restore']);
             Route::post('/{id}/toggle-status', [ServiceController::class, 'toggleStatus']);
+        });
+
+        Route::apiResource('products', ProductController::class);
+        
+        Route::prefix('products/custom')->group(function () {
+            Route::post('/{product}/stock', [ProductController::class, 'updateStock']);
+            Route::get('/categories', [ProductController::class, 'categories']);
+            Route::get('/report/low-stock', [ProductController::class, 'lowStockReport']);
+            Route::get('/report/out-of-stock', [ProductController::class, 'outOfStockReport']);
+        });
+        
+        Route::apiResource('appointments', AppointmentController::class);
+
+        Route::prefix('appointments/custom')->group(function () {
+            Route::get('/my-appointments', [AppointmentController::class, 'myAppointments']);
+            Route::get('/barber-appointments', [AppointmentController::class, 'barberAppointments']);
+        });
+
+        Route::apiResource('appointments', AppointmentController::class);
+    
+        Route::prefix('appointments/custom')->group(function () {
+            Route::get('/barbers/{barber}/available-slots/{date}', [AppointmentController::class, 'availableSlots']);
+            Route::post('/{appointment}/cancel', [AppointmentController::class, 'cancel']);
+            Route::post('/{appointment}/complete', [AppointmentController::class, 'complete']);
+            Route::post('/{appointment}/confirm', [AppointmentController::class, 'confirm']);
+            Route::get('/appointments/upcoming', [AppointmentController::class, 'upcoming']);
+            Route::get('/appointments/history', [AppointmentController::class, 'history']);
+            Route::get('/services', [AppointmentController::class, 'services']);
+            Route::get('/products', [AppointmentController::class, 'products']);
+            Route::get('/client/{client}', [AppointmentController::class, 'byClient']);
+            Route::get('/barber/{barber}', [AppointmentController::class, 'byBarber']);
+            Route::get('/barbershop/{barbershop}', [AppointmentController::class, 'byBarbershop']);
         });
     });
 });

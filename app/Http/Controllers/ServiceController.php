@@ -19,7 +19,7 @@ class ServiceController extends Controller
         try {
             $validator = Validator::make($request->all(), [
                 'barbershop_id' => 'nullable|exists:barbershops,id',
-                'active' => 'nullable|boolean'
+                'is_active' => 'nullable|boolean'
             ]);
 
             if ($validator->fails()) {
@@ -32,17 +32,14 @@ class ServiceController extends Controller
 
             $query = Service::with('barbershop:id,name,user_id');
 
-            // Filtrar por barbearia se especificado
             if ($request->has('barbershop_id') && $request->barbershop_id) {
                 $query->where('barbershop_id', $request->barbershop_id);
             }
 
-            // Filtrar por status ativo/inativo
-            if ($request->has('active')) {
-                $query->where('active', $request->active);
+            if ($request->has('is_active')) {
+                $query->where('is_active', $request->is_active);
             } else {
-                // Se não for especificado, mostra apenas ativos
-                $query->where('active', true);
+                $query->where('is_active', true);
             }
 
             $services = $query->orderBy('name')->get();
@@ -81,7 +78,7 @@ class ServiceController extends Controller
                 'description' => 'nullable|string|max:500',
                 'price' => 'required|numeric|min:0|max:9999.99',
                 'duration_minutes' => 'required|integer|min:1|max:480',
-                'active' => 'boolean'
+                'is_is_active' => 'boolean'
             ], [
                 'name.unique' => 'Já existe um serviço com este nome nesta barbearia',
                 'price.max' => 'O preço não pode ser superior a R$ 9.999,99',
@@ -96,7 +93,6 @@ class ServiceController extends Controller
                 ], 422);
             }
 
-            // Verificar se o usuário tem permissão para criar serviço nesta barbearia
             $barbershop = Barbershop::findOrFail($request->barbershop_id);
             
             if ($barbershop->user_id !== auth('sanctum')->id()) {
@@ -164,7 +160,6 @@ class ServiceController extends Controller
         try {
             $service = Service::with('barbershop')->findOrFail($id);
 
-            // Verificar se o usuário tem permissão para editar este serviço
             if ($service->barbershop->user_id !== auth('sanctum')->id()) {
                 return response()->json([
                     'success' => false,
@@ -186,7 +181,7 @@ class ServiceController extends Controller
                 'description' => 'nullable|string|max:500',
                 'price' => 'sometimes|required|numeric|min:0|max:9999.99',
                 'duration_minutes' => 'sometimes|required|integer|min:1|max:480',
-                'active' => 'sometimes|boolean'
+                'is_active' => 'sometimes|boolean'
             ], [
                 'name.unique' => 'Já existe um serviço com este nome nesta barbearia',
                 'price.max' => 'O preço não pode ser superior a R$ 9.999,99',
@@ -231,7 +226,6 @@ class ServiceController extends Controller
         try {
             $service = Service::with('barbershop')->findOrFail($id);
 
-            // Verificar se o usuário tem permissão para excluir este serviço
             if ($service->barbershop->user_id !== auth('sanctum')->id()) {
                 return response()->json([
                     'success' => false,
@@ -268,7 +262,6 @@ class ServiceController extends Controller
         try {
             $service = Service::onlyTrashed()->with('barbershop')->findOrFail($id);
 
-            // Verificar permissão
             if ($service->barbershop->user_id !== auth('sanctum')->id()) {
                 return response()->json([
                     'success' => false,
@@ -319,7 +312,6 @@ class ServiceController extends Controller
             $query = Service::onlyTrashed()
                 ->with('barbershop:id,name,user_id');
 
-            // Filtrar por barbearia se especificado
             if ($request->has('barbershop_id') && $request->barbershop_id) {
                 $query->where('barbershop_id', $request->barbershop_id);
             }
@@ -342,14 +334,13 @@ class ServiceController extends Controller
     }
 
     /**
-     * Toggle active status.
+     * Toggle is_active status.
      */
     public function toggleStatus(string $id)
     {
         try {
             $service = Service::with('barbershop')->findOrFail($id);
 
-            // Verificar permissão
             if ($service->barbershop->user_id !== auth('sanctum')->id()) {
                 return response()->json([
                     'success' => false,
@@ -357,7 +348,7 @@ class ServiceController extends Controller
                 ], 403);
             }
 
-            $service->active = !$service->active;
+            $service->is_active = !$service->is_active;
             $service->save();
 
             return response()->json([
@@ -365,7 +356,7 @@ class ServiceController extends Controller
                 'message' => 'Status do serviço alterado com sucesso',
                 'data' => [
                     'id' => $service->id,
-                    'active' => $service->active
+                    'is_active' => $service->is_active
                 ]
             ]);
 
@@ -384,9 +375,9 @@ class ServiceController extends Controller
     }
 
     /**
-     * Get active services only.
+     * Get is_active services only.
      */
-    public function active(Request $request)
+    public function is_active(Request $request)
     {
         try {
             $validator = Validator::make($request->all(), [
@@ -402,10 +393,9 @@ class ServiceController extends Controller
             }
 
             $query = Service::with('barbershop:id,name,user_id')
-                ->where('active', true)
+                ->where('is_active', true)
                 ->whereNull('deleted_at');
 
-            // Filtrar por barbearia se especificado
             if ($request->has('barbershop_id') && $request->barbershop_id) {
                 $query->where('barbershop_id', $request->barbershop_id);
             }
@@ -428,9 +418,9 @@ class ServiceController extends Controller
     }
 
     /**
-     * Get inactive services only.
+     * Get inis_active services only.
      */
-    public function inactive(Request $request)
+    public function inis_active(Request $request)
     {
         try {
             $validator = Validator::make($request->all(), [
@@ -446,10 +436,9 @@ class ServiceController extends Controller
             }
 
             $query = Service::with('barbershop:id,name,user_id')
-                ->where('active', false)
+                ->where('is_active', false)
                 ->whereNull('deleted_at');
 
-            // Filtrar por barbearia se especificado
             if ($request->has('barbershop_id') && $request->barbershop_id) {
                 $query->where('barbershop_id', $request->barbershop_id);
             }
@@ -489,15 +478,13 @@ class ServiceController extends Controller
                 ], 422);
             }
 
-            // Aqui você pode adicionar lógica específica se alguns barbeiros
-            // não realizarem todos os serviços da barbearia
             $services = Service::with('barbershop:id,name')
                 ->where('barbershop_id', function($query) use ($request) {
                     $query->select('barbershop_id')
                         ->from('barbers')
                         ->where('id', $request->barber_id);
                 })
-                ->where('active', true)
+                ->where('is_active', true)
                 ->whereNull('deleted_at')
                 ->orderBy('name')
                 ->get();
@@ -518,7 +505,7 @@ class ServiceController extends Controller
     }
 
     /**
-     * Get all services (including inactive) for admin management.
+     * Get all services (including inis_active) for admin management.
      */
     public function allForManagement(Request $request)
     {
@@ -535,7 +522,6 @@ class ServiceController extends Controller
                 ], 422);
             }
 
-            // Verificar se o usuário é dono da barbearia
             $barbershop = Barbershop::findOrFail($request->barbershop_id);
             if ($barbershop->user_id !== auth('sanctum')->id()) {
                 return response()->json([

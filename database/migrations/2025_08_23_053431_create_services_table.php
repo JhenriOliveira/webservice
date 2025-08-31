@@ -15,12 +15,12 @@ return new class extends Migration
             $table->text('description')->nullable();                                 // Breve Descricao do serviço
             $table->decimal('price', 8, 2);                                          // Preço
             $table->integer('duration_minutes')->default(30);                        // Duração em minutos
-            $table->boolean('active')->default(true);
+            $table->boolean('is_active')->default(true);
             $table->timestamps();
             $table->softDeletes();
 
             $table->index('barbershop_id');
-            $table->index('active');
+            $table->index('is_active');
         });
     }
 
